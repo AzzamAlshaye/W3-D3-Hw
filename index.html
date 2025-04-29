@@ -360,20 +360,33 @@
             important news directly to your inbox.
           </p>
         </div>
-        <div class="newsletter-form">
-          <form>
+        <div class="newsletter-sub-container">
+          <div class="newsletter-form">
+            <form>
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                required
+                aria-label="Email Address"
+              />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="privacy-notice">
+              I agree to receive your newsletters and accept the
+              <a href="#">data privacy policy</a>.
+            </p>
+          </div>
+          <div class="newsletter-privacy">
             <input
-              type="email"
-              placeholder="Your Email Address"
-              required
-              aria-label="Email Address"
+              type="checkbox"
+              name="data-privacy"
+              class="newsletter-checkbox"
             />
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-          <p class="privacy-notice">
-            I agree to receive your newsletters and accept the
-            <a href="#">data privacy policy</a>.
-          </p>
+            <p>
+              I agree to receive your newsletters and accept the data privacy
+              statement.
+            </p>
+          </div>
         </div>
       </div>
     </section>

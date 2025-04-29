@@ -543,6 +543,26 @@ p {
   color: #6b7280;
   font-size: 1rem;
 }
+.newsletter-sub-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.newsletter-privacy {
+  display: flex;
+  justify-content: left;
+  font-size: 0.8rem;
+}
+.newsletter-privacy p {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  margin-left: 0.9em;
+  height: 2.5rem;
+}
+
 .newsletter-form {
   flex: 1;
   width: 100%;
