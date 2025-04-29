@@ -1,6 +1,3 @@
-/* --- Base Styles --- */
-/* ... (Keep all base styles, buttons, header, hero, filters, grid, card, newsletter, footer styles from previous response) ... */
-/* --- Base Styles --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,23 +5,23 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif; /* Using Poppins */
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  color: #1f2937; /* Darker Text (Tailwind gray-800) */
+  color: #1f2937;
   background-color: #ffffff;
-  font-weight: 400; /* Default font weight */
-  font-size: 16px; /* Base font size */
+  font-weight: 400;
+  font-size: 16px;
 }
 
 a {
-  color: #3b82f6; /* Primary Blue (Tailwind blue-500) */
+  color: #3b82f6;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #1d4ed8; /* Darker Blue (Tailwind blue-700) */
-  text-decoration: none; /* Remove underline on hover for cleaner look */
+  color: #1d4ed8;
+  text-decoration: none;
 }
 
 img {
@@ -41,8 +38,8 @@ h1,
 h2,
 h3,
 h4 {
-  color: #111827; /* Even Darker Gray (Tailwind gray-900) for headings */
-  font-weight: 600; /* Semi-bold headings */
+  color: #111827;
+  font-weight: 600;
   line-height: 1.3;
 }
 
@@ -62,16 +59,16 @@ h4 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
-} /* 16px, slightly smaller bottom margin */
+}
 
 p {
   margin-bottom: 1rem;
-  color: #6b7280; /* Muted Gray (Tailwind gray-500) */
+  color: #6b7280;
 }
 
 .container {
   width: 100%;
-  max-width: 1170px; /* Slightly wider common container */
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -81,16 +78,16 @@ p {
 /* --- Buttons --- */
 .btn {
   display: inline-block;
-  padding: 10px 24px; /* Adjusted padding */
-  border: 1px solid transparent; /* Base border */
-  border-radius: 6px; /* Slightly more rounded */
+  padding: 10px 24px;
+  border: 1px solid transparent;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 0.95rem; /* Slightly smaller text */
-  font-weight: 500; /* Medium weight */
+  font-size: 0.95rem;
+  font-weight: 500;
   text-align: center;
   transition: all 0.2s ease;
   text-decoration: none !important;
-  line-height: 1.5; /* Ensure consistent height */
+  line-height: 1.5;
 }
 
 .btn-primary {
@@ -100,53 +97,51 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #000000; /* Darker Blue */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #000000;
+  transform: translateY(-2px);
   color: #ffffff;
 }
 
 .btn-secondary {
   background-color: #ffffff;
-  color: #4b5563; /* Gray (Tailwind gray-600) */
-  border: 1px solid #e5e7eb; /* Border Color (Tailwind gray-200) */
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
 }
 
 .btn-secondary:hover {
-  background-color: #f9fafb; /* Light Background (Tailwind gray-50) */
-  border-color: #d1d5db; /* Slightly darker border */
+  background-color: #f9fafb;
+  border-color: #d1d5db;
   color: #1f2937;
 }
 
 /* Specific Header Button Style */
 .header-btn {
-  padding: 8px 20px; /* Smaller padding for header button */
+  padding: 8px 20px;
 }
 
 /* --- Header --- */
 .header {
   background-color: #115cfa;
-  /* border-bottom: 1px solid #e5e7eb;  */
-  padding: 20px 0; /* Slightly more padding */
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  border: #ff0000 solid 2px;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
   align-content: center;
-  border: #000000 solid 2px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  font-weight: 600; /* Semi-bold */
-  font-size: 1.5rem; /* Larger logo text */
-  color: #111827; /* Darkest Gray */
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #111827;
   text-decoration: none !important;
   z-index: 10;
 }
@@ -154,7 +149,7 @@ p {
   color: #111827;
 }
 .logo img {
-  height: 32px; /* Slightly larger logo image */
+  height: 32px;
   margin-right: 12px;
 }
 
@@ -178,11 +173,10 @@ p {
 .main-nav {
   display: none;
   position: absolute;
-  top: calc(100% + 1px); /* Position below header border */
+  top: calc(100% + 1px);
   left: 0;
   right: 0;
   background-color: #000000ee;
-  border-bottom: 1px solid #ebe5e5;
   padding: 16px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   z-index: 5;
@@ -195,29 +189,26 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 10px;
-  /* margin-right: 55px; */
 }
 .main-nav li {
   text-align: center;
-} /* Align left */
+}
 
 .main-nav a {
-  color: #ffffffb5; /* Medium Gray */
+  color: #ffffffb5;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px 10px; /* More padding */
+  padding: 8px 10px;
   border-radius: 4px;
   transition: background-color 0.2s, color 0.2s;
 }
-.main-nav a:hover,
-.main-nav a.active {
-  color: #000000; /* Primary Blue */
-  background-color: #006eff; /* Lighter Blue Background (Tailwind blue-50) */
+.main-nav a:hover {
+  color: #000000;
+  background-color: #006eff;
   text-decoration: none;
 }
 
@@ -232,7 +223,7 @@ p {
 .mobile-header-actions {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Make buttons full width */
+  align-items: center;
   gap: 10px;
   padding-top: 4px;
   margin-top: 8px;
@@ -242,7 +233,7 @@ p {
   padding: 8px 0;
 }
 .mobile-header-actions .btn {
-  width: 40%; /* Full width button */
+  width: 40%;
 }
 .mobile-header-actions .mobile-header-icons {
   display: flex;
@@ -261,9 +252,9 @@ p {
 
 /* --- Hero Section --- */
 .hero {
-  background-color: #115cfa; /* Primary Blue */
+  background-color: #115cfa;
   color: #ffffff;
-  padding: 35px 0; /* More padding */
+  padding: 35px 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -280,7 +271,7 @@ p {
     rgba(255, 255, 255, 0.15) 1px,
     transparent 0
   );
-  background-size: 20px 20px; /* Adjust size of pattern */
+  background-size: 20px 20px;
   opacity: 0.6;
   z-index: 1;
 }
@@ -288,22 +279,22 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: c;
+  /* justify-content: center; */
   position: relative;
   z-index: 2;
-  max-width: 750px; /* Limit content width */
+  max-width: 750px;
   margin: 0 auto;
 }
 .hero h1 {
-  font-size: 1.5rem; /* Larger Heading */
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #fff; /* White heading */
-  font-weight: 900; /* Bolder */
+  color: #fff;
+  font-weight: 900;
 }
 .hero .subtitle {
   font-size: 1.125rem; /* 18px */
   max-width: 650px;
-  margin: 0 0.5rem 0.5rem 0.5rem; /* More bottom margin */
+  margin: 0 0.5rem 0.5rem 0.5rem;
   color: #fff;
   line-height: 2;
 }
@@ -331,38 +322,38 @@ p {
 /* --- Filters Section --- */
 .filters {
   background-color: #ffffff;
-  padding: 25px 0; /* More padding */
+  padding: 25px 0;
   border-bottom: 1px solid #e5e7eb;
 }
 .filter-nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px 12px; /* Reduced gap */
+  gap: 8px 12px;
 }
 .filter-nav a {
-  color: #4b5563; /* Medium Gray */
-  padding: 6px 16px; /* Adjusted padding */
-  border-radius: 20px; /* Pill shape */
+  color: #4b5563;
+  padding: 6px 16px;
+  border-radius: 20px;
   font-weight: 500;
   font-size: 0.9rem;
-  border: 1px solid transparent; /* For hover effect */
+  border: 1px solid transparent;
   transition: all 0.2s ease;
 }
 .filter-nav a.active,
 .filter-nav a:hover {
-  color: #3b82f6; /* Primary Blue */
-  background-color: #eff6ff; /* Light Blue BG */
+  color: #3b82f6;
+  background-color: #eff6ff;
   text-decoration: none;
 }
 .filter-nav a.active {
-  font-weight: 600; /* Bolder active link */
+  font-weight: 600;
 }
 
 /* --- Templates Grid Section --- */
 .templates-grid {
-  padding: 80px 0; /* More padding */
-  background-color: #f9fafb; /* Light BG */
+  padding: 80px 0;
+  background-color: #f9fafb;
 }
 .grid {
   display: grid;
@@ -372,14 +363,10 @@ p {
 .card {
   border-radius: 8px;
   border-radius: 8px;
-  max-width: 400px; /* Example width */
+  max-width: 400px;
   transition: opacity 0.2s ease, filter 0.2s ease;
 }
-/* .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-} */
+
 .card img {
   width: 100%;
   object-fit: cover;
@@ -387,26 +374,27 @@ p {
 }
 
 .image-wrapper {
-  position: relative; /* Crucial for positioning the overlay */
-  cursor: pointer; /* Indicate it's interactive */
-  /* overflow: hidden; */ /* Can hide parts of overlay if needed, but usually not required if overlay fits perfectly */
-  line-height: 0; /* Prevents potential extra space below image */
+  position: relative;
+  cursor: pointer;
+
+  line-height: 0;
 }
 .image-wrapper img {
-  display: block; /* Removes extra space below image */
+  display: block;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  transition: filter 0.3s ease; /* Optional: slightly dim image on hover */
+  border-radius: 5px;
+  height: auto;
+  transition: filter 0.3s ease;
 }
 .overlay {
-  position: absolute; /* Position overlay relative to .image-wrapper */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border: #006eff solid 3px;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 
   /* Flexbox to center the icon */
   display: flex;
@@ -415,26 +403,25 @@ p {
 }
 .icon-background {
   background-color: #1d72f2;
-  width: 60px; /* Size of the white circle */
+  width: 60px;
   height: 60px;
-  border-radius: 50%; /* Make it a circle */
+  border-radius: 50%;
 
-  /* Flexbox to center the icon *inside* the circle */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .icon {
-  color: #ffffff; /* Blue color for the icon */
-  font-size: 24px; /* Adjust icon size */
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .image-wrapper:hover img {
-  filter: grayscale(100%); /* Revert to color on hover */
+  filter: grayscale(100%);
 }
 /* --- The Hover Effect Trigger --- */
 .image-wrapper:hover .overlay {
-  opacity: 1; /* Show the overlay on hover */
+  opacity: 1;
 }
 
 .card-content p {
@@ -442,15 +429,13 @@ p {
 }
 .card-tags {
   margin-bottom: 14px;
-  display: flex; /* Use flex for tags */
+  display: flex;
   align-content: center;
   justify-content: center;
   gap: 10px;
-  border: #000000 solid 2px;
 }
 .card-content {
   margin-top: 30px;
-  border: #000000 solid 2px;
 }
 .tag {
   display: flex;
@@ -473,9 +458,9 @@ p {
 }
 .card p {
   color: #6b7280;
-  font-size: 0.9rem; /* Slightly smaller */
+  font-size: 0.9rem;
   line-height: 1.6;
-  margin-bottom: 0; /* Remove default bottom margin */
+  margin-bottom: 0;
 }
 
 /* --- REMOVED Feature Section Styles --- */
@@ -498,35 +483,35 @@ p {
 .help-section > .help-container > p {
   /* Target the main paragraph */
   color: #6b7280;
-  font-size: 1.125rem; /* Slightly larger text */
-  margin-bottom: 3rem; /* More space below paragraph */
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
 }
 .help-points {
   display: grid;
-  grid-template-columns: 1fr; /* Stack on mobile */
+  grid-template-columns: 1fr;
   gap: 30px;
-  margin-bottom: 3rem; /* Space below points */
-  text-align: left; /* Align text left within each point */
+  margin-bottom: 3rem;
+  text-align: left;
 }
 .help-points div h4 {
-  font-size: 1.125rem; /* Slightly larger */
+  font-size: 1.125rem;
   margin-bottom: 0.5rem;
   color: #111827;
-  display: flex; /* Align icon and text */
+  display: flex;
   align-items: center;
   gap: 10px;
 }
 .help-points div h4 i {
-  color: #3b82f6; /* Blue icon */
-  font-size: 1.3em; /* Make icon slightly larger */
-  width: 25px; /* Fixed width for alignment */
+  color: #3b82f6;
+  font-size: 1.3em;
+  width: 25px;
   text-align: center;
 }
 .help-points div p {
   color: #6b7280;
   font-size: 0.95rem;
   margin-bottom: 0;
-  padding-left: 35px; /* Indent text under icon */
+  padding-left: 35px;
 }
 .help-section .btn {
   padding: 12px 30px;
@@ -534,7 +519,7 @@ p {
 
 /* --- Newsletter Section --- */
 .newsletter {
-  background-color: #f2f3f6; /* Light Gray BG */
+  background-color: #f2f3f6;
   padding: 80px 0;
   border-bottom: 1px solid #d8d6d6;
 }
@@ -547,7 +532,7 @@ p {
 }
 .newsletter-text {
   flex: 1;
-  max-width: 600px; /* Limit width */
+  max-width: 600px;
 }
 .newsletter-text h2 {
   font-size: 2rem;
@@ -562,7 +547,7 @@ p {
   flex: 1;
   width: 100%;
   height: 10%;
-  max-width: 500px; /* Limit form width */
+  max-width: 500px;
   border: 4px solid #d8d6d6;
   border-radius: 6px;
 }
@@ -603,33 +588,33 @@ p {
 
 /* --- Footer --- */
 .footer {
-  background-color: #f2f3f6; /* Darkest Gray */
-  color: #000000; /* Lighter Gray Text */
+  background-color: #f2f3f6;
+  color: #000000;
   padding-top: 60px;
-  font-size: 0.9rem; /* Slightly smaller base font */
+  font-size: 0.9rem;
 }
 .footer-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px; /* More gap */
+  gap: 40px;
   margin-bottom: 50px;
 }
 .footer-column h4 {
   color: #000000;
   margin-bottom: 1rem;
-  font-size: 1rem; /* Smaller heading */
-  font-weight: 600; /* Semi-bold */
+  font-size: 1rem;
+  font-weight: 600;
 }
 .footer-column ul li {
-  margin-bottom: 12px; /* Slightly more space */
+  margin-bottom: 12px;
 }
 .footer-column a {
-  color: #505050; /* Lighter Gray */
+  color: #505050;
   text-decoration: none;
 }
 .footer-column a:hover {
   color: #ffffff;
-  text-decoration: none; /* No underline */
+  text-decoration: none;
 }
 .footer-bottom {
   border-top: 1px solid #d8d6d6;
@@ -642,12 +627,12 @@ p {
 }
 .copyright {
   font-size: 0.85rem;
-  color: #9ca3af; /* Lighter gray */
+  color: #9ca3af;
   margin-bottom: 0;
 }
 .social-icons a {
   color: #9ca3af;
-  font-size: 1.1rem; /* Slightly smaller */
+  font-size: 1.1rem;
   margin-left: 18px;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -720,9 +705,6 @@ p {
   .social-icons {
     margin-left: 0;
   }
-  .mobile-header-actions {
-    display: none;
-  }
 }
 
 /* --- Desktop (large screens) --- */
@@ -740,6 +722,7 @@ p {
   .main-nav {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     position: static;
     background: none;
     border: none;
@@ -757,6 +740,7 @@ p {
     text-align: left;
   }
   .main-nav a {
+    color: rgb(211, 209, 209);
     display: inline;
     padding: 5px 0;
     background: none;
@@ -764,8 +748,9 @@ p {
   .main-nav a:hover,
   .main-nav a.active {
     background: none;
-    color: #115cfa;
+    color: #ffffff;
   }
+
   .mobile-header-actions {
     display: none !important;
   }
